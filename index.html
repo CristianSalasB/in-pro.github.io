@@ -5,14 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>In-Pro.</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      /* font-family: 'Roboto', sans-serif; */
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
     }
     .bg-light-blue {
       background-color: #e5f6ff;
     }
+
+    .logo-image{
+      /* width: 134.14px;
+      height: 48px; */
+      width: 221px !important;
+      height: 73px !important;
+    }
+
+    /* .titulos{
+
+    } */
   </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -20,8 +39,8 @@
   <!-- Navbar -->
   <nav class="flex items-center justify-between p-6 bg-white">
     <div class="flex items-center">
-      <img src="https://via.placeholder.com/100x50" alt="Logo" class="h-12 mr-2">
-      <span class="text-2xl font-bold text-gray-700">in-pro</span>
+      <img src="./assets/img/Inpro-Logo.png" alt="Logo" class="h-12 mr-2 logo-image">
+      <!-- <span class="text-2xl font-bold text-gray-700">in-pro</span> -->
     </div>
     <ul class="flex space-x-6 text-blue-600">
       <li><a href="#" class="hover:text-blue-800">INICIO</a></li>
@@ -32,17 +51,66 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="flex flex-col items-center px-8 py-20 bg-white md:flex-row">
+  <!-- <section class="flex flex-col items-center px-8 py-20 bg-white md:flex-row">
     <div class="w-full md:w-1/2">
       <img src="https://via.placeholder.com/400x400" alt="Persona preocupada" class="mx-auto">
     </div>
     <div class="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
-      <h2 class="text-xl text-orange-600">¿Cansado de malgastar tu presupuesto como weon?</h2>
-      <h1 class="mt-4 text-4xl font-bold text-blue-600">Somos expertos en eficiencia</h1>
+      <h2 class="text-xl text-orange-600">¿Cansado de malgastar tu presupuesto?</h2>
+      <h1 class="mt-4 text-4xl font-bold text-blue-600">Somos expertos</h1>
+      <h1 class="mt-4 text-4xl font-bold text-blue-600">en eficiencia</h1>
       <p class="mt-4 text-gray-700">Te asesoramos en reconvertir tus salas de calderas para que disminuyan los consumos y gastos de agua caliente</p>
       <button class="px-6 py-3 mt-8 text-lg font-bold text-white bg-orange-600 rounded hover:bg-orange-700">¡Contáctanos ya!</button>
     </div>
-  </section>
+  </section> -->
+
+  <div class="relative w-full overflow-hidden">
+    <div id="carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth">
+      
+      <!-- Slide 1 -->
+      <section class="flex flex-col items-center flex-none w-full px-8 py-20 bg-white md:flex-row snap-center">
+        <div class="w-full md:w-1/2">
+          <img src="https://via.placeholder.com/400x400" alt="Persona preocupada" class="mx-auto">
+        </div>
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
+          <h2 class="text-xl text-orange-600">¿Cansado de malgastar tu presupuesto?</h2>
+          <h1 class="mt-4 text-4xl font-bold text-blue-600">Somos expertos</h1>
+          <h1 class="mt-4 text-4xl font-bold text-blue-600">en eficiencia</h1>
+          <p class="mt-4 text-gray-700">Te asesoramos en reconvertir tus salas de calderas para que disminuyan los consumos y gastos de agua caliente</p>
+          <button class="px-6 py-3 mt-8 text-lg font-bold text-white bg-orange-600 rounded hover:bg-orange-700">¡Contáctanos ya!</button>
+        </div>
+      </section>
+      
+      <!-- Slide 2 -->
+      <section class="flex flex-col items-center flex-none w-full px-8 py-20 bg-white md:flex-row snap-center">
+        <div class="w-full md:w-1/2">
+          <img src="https://via.placeholder.com/400x400" alt="Imagen 2" class="mx-auto">
+        </div>
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
+          <h2 class="text-xl text-orange-600">¿Buscas mejorar tu eficiencia?</h2>
+          <h1 class="mt-4 text-4xl font-bold text-blue-600">Tenemos la solución</h1>
+          <p class="mt-4 text-gray-700">Nuestros servicios están diseñados para optimizar tus recursos y reducir costos.</p>
+          <button class="px-6 py-3 mt-8 text-lg font-bold text-white bg-orange-600 rounded hover:bg-orange-700">¡Solicita una cotización!</button>
+        </div>
+      </section>
+      
+      <!-- Slide 3 -->
+      <section class="flex flex-col items-center flex-none w-full px-8 py-20 bg-white md:flex-row snap-center">
+        <div class="w-full md:w-1/2">
+          <img src="https://via.placeholder.com/400x400" alt="Imagen 3" class="mx-auto">
+        </div>
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
+          <h2 class="text-xl text-orange-600">Resultados garantizados</h2>
+          <h1 class="mt-4 text-4xl font-bold text-blue-600">Aumenta tu productividad</h1>
+          <p class="mt-4 text-gray-700">Con nuestras estrategias, verás un incremento notable en la eficiencia de tus operaciones.</p>
+          <button class="px-6 py-3 mt-8 text-lg font-bold text-white bg-orange-600 rounded hover:bg-orange-700">¡Empieza hoy!</button>
+        </div>
+      </section>
+  
+    </div>
+  </div>
+
+  <div id="carousel-inpro"></div>
 
   <!-- Footer -->
   <footer class="px-8 py-8 bg-light-blue">
@@ -66,4 +134,5 @@
   </footer>
 
 </body>
+<script src="./assets/js/main.js"></script>
 </html>
