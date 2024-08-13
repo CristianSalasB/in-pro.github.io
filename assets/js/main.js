@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // alert('dom');
     // document.getElementById("slider-2").style.display = 'none';
     // addClass(document.getElementById("sButton1"), "bg-purple-800");
-    loopSlider(cont, xx);
+    // loopSlider(cont, xx);
 });
 
 // document.addEventListener('DOMContentLoaded', function() {
