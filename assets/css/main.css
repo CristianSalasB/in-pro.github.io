@@ -4,6 +4,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    padding-bottom: 100px; /* Espacio para el cuadro flotante */
   }
 
   .bg-light-blue {
@@ -76,4 +77,57 @@ body {
 
   .mt-negative-blue-row{
     margin-top: -6rem !important;
+  }
+
+  .whatsapp-card {
+    position: fixed;
+    bottom: 20px;
+    /* right: 20px; */
+    right: 5rem;
+    padding: 15px;
+    /* background-color: #f8f9fa; */
+    background-color: #454A4D;
+    /* color: white !important; */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .whatsapp-card.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* .whatsapp-icon {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+
+  .whatsapp-icon {
+    position: absolute;
+    top: -15px;
+    /* right: -15px; */
+    right: 10px;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .whatsapp-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  #contact {
+    height: 400px; /* Simula una sección de contacto */
+    margin-top: 50px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
   }
