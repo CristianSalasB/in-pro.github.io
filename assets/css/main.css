@@ -210,3 +210,22 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+  .full-height {
+    /* height: 100vh;  */
+    margin-top: -6rem !important; 
+  }
+
+  .card-img{
+    width: 375px !important;
+    height: 200px !important;
+  }
+
+  .mt-8 {
+    margin-top: 7rem !important;
+  }
+
+  .card-style{
+    border-color: white !important;
+    border-radius: 16px !important;
+  }
