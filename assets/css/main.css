@@ -93,6 +93,8 @@ body {
     max-width: 320px;
     z-index: 1000;
     transition: opacity 0.3s ease-in-out;
+    /* ======== */
+    /* margin-top: -6px; */
   }
   .whatsapp-card.hidden {
     opacity: 0;
@@ -111,19 +113,96 @@ body {
 
   .whatsapp-icon {
     position: absolute;
-    top: -15px;
+    top: -19px;
     /* right: -15px; */
     right: 10px;
-    background-color: #25d366;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* background-color: #25d366; */
+    /* padding: 10px; */
+    /* border-radius: 50%; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   }
 
   .whatsapp-icon img {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
   }
+
+  .whatsapp-title{
+    margin-top: -6px;
+    margin-bottom: 3px;
+  }
+
+  .whatsapp-text{
+    margin-bottom: -6px;
+  }
+  
+  .carousel-indicators {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin-top: 20px !important;
+    position: unset !important;
+  }
+  .carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #fff !important; /* Color de fondo blanco */
+    border: 2px solid #F56706 !important; /* Borde naranja */
+    border-radius: 50% !important; /* Forma circular */
+    cursor: pointer !important;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
+    opacity: 1 !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .carousel-indicators .active {
+    background-color: #F56706 !important; /* Color de fondo naranja cuando está activo */
+    border-color: #F56706 !important; /* Borde coincide con el fondo cuando está activo */
+  }
+
+  .carousel-inner {
+    position: relative !important;
+  }
+  .carousel-footer {
+    position: absolute !important;
+    bottom: 140px !important;
+    /* left: 832px !important; */
+    left: 52rem !important;
+    /* right: 50px !important; */
+    right: 18rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 20px !important;
+  }
+
+  /* .btn-orange {
+    background-color: #F56706;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  } */
+  .btn-orange:hover {
+    background-color: #e55e00;
+  }
+
+  /* .carousel-indicators button {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #ffa500 !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    border: none !important;
+    transition: background-color 0.3s ease-in-out !important;
+  }
+  .carousel-indicators .active {
+    background-color: #ff6700 !important;
+  } */
+
   #contact {
     height: 400px; /* Simula una sección de contacto */
     margin-top: 50px;
