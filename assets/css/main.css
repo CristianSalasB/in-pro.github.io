@@ -229,3 +229,9 @@ body {
     border-color: white !important;
     border-radius: 16px !important;
   }
+
+  .orange-row{
+    background-color: #F56706 !important;
+    height: 0.25rem !important;
+    margin-bottom: 14px !important;
+  }
