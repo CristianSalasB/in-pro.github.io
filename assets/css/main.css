@@ -241,7 +241,16 @@ body {
     /* width: 375px !important; */
     height: 200px !important;
     border-radius: 1rem !important;
-    filter: blur(2px)  brightness(80%) !important;
+    /* filter: blur(1px)  brightness(80%) !important; */
+    filter: blur(1px) brightness(80%) sepia(40%) hue-rotate(-20deg) !important;
+    /* filter: blur(1px) brightness(70%) sepia(80%) !important; */
+  }
+
+  .text-primary2 {
+    color: #072b50 !important;
+    /* text-shadow: 2px 2px 0px #fff, -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff; */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    font-weight: bolder !important;
   }
 
   .mt-8 {
@@ -338,4 +347,65 @@ body {
 
 .display-12{
   font-size: 4rem !important;
+}
+
+
+@media (max-width: 768px) {
+  .height-img {
+    height: auto !important; /* Permite que la imagen se ajuste automáticamente en pantallas pequeñas */
+    max-width: 100% !important;
+  }
+
+  .size-content-txt-carousel {
+    width: 100% !important; /* Ajusta el texto a 100% del contenedor */
+    font-size: 1rem !important; /* Reduce el tamaño de fuente para pantallas pequeñas */
+  }
+
+  .display-12 {
+    font-size: 2.5rem !important; /* Reduce el tamaño del título para móviles */
+  }
+
+  .carousel-footer button {
+    left: 1rem !important;
+    bottom: 2rem !important; /* Reajusta el botón en pantallas pequeñas */
+  }
+
+  .carousel-indicators {
+    left: auto !important;
+    bottom: 1rem !important;
+    right: 0 !important;
+    justify-content: center !important;
+  }
+
+  .blue-row {
+    width: 100% !important; /* La franja azul se adapta a pantallas pequeñas */
+  }
+
+  .mt-negative-blue-row{
+    /* margin-top: -6rem !important; */
+    margin-top: 0rem !important;
+  }
+
+  /* #carouselExampleDark{
+    height: 55rem !important;
+  } */
+
+  .carousel-item{
+    height: 57rem !important;
+  }
+
+  .btn-orange {
+    padding: 0.5rem 2rem !important; /* Botón más pequeño en móviles */
+    font-size: 1rem !important;
+  }
+
+  .d-flex {
+    flex-direction: column !important; /* Alinea las imágenes y texto en una sola columna */
+  }
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
