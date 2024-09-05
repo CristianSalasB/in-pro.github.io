@@ -242,7 +242,8 @@ body {
     height: 200px !important;
     border-radius: 1rem !important;
     /* filter: blur(1px)  brightness(80%) !important; */
-    filter: blur(1px) brightness(80%) sepia(40%) hue-rotate(-20deg) !important;
+    filter: brightness(80%) sepia(40%) hue-rotate(-20deg) !important;
+    /*filter: blur(1px) brightness(80%) sepia(40%) hue-rotate(-20deg) !important;*/
     /* filter: blur(1px) brightness(70%) sepia(80%) !important; */
   }
 
